@@ -24,4 +24,4 @@ cp example/example.dot current.dot
 ./graph_reduce.sh
 ```
 
-Then resulting graph is in current.dot
+Then the resulting graph is in current.dot
