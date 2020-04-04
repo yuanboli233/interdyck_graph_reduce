@@ -13,10 +13,13 @@ an alternative choice is c, meaning close bracket.
 
 ## Usage
 copy your dot file and name it as "current.dot" in the directory
+
 run ./graph_reduce.sh
 
 ## Example
+```
 cp example/example.dot current.dot
 ./graph_reduce.sh
+```
 
 Then resulting graph is in current.dot
