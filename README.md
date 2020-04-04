@@ -1,17 +1,17 @@
-# interdyck_graph_reduce
-An implementation for interdyck graph reduction
+# Graph Simplification for Interleaved Dyck-Reachability
+This repostory contains an implementation of the paper
+- Yuanbo Li, Qirun Zhang, Thomas Reps. Fast Graph Simplification for Interleaved Dyck-Reachability. In *PLDI 2020*.
+## Interleaved Dyck language
+The implementation currently supports the interleaved Dyck language of two Dyck lauanges representing Brackets and Prernetheses, respectively.
 
 ## Input format
-The implementation accept a graph input similar to a dot format. An edge should be represented as
-
+The implementation accepts an input graph in the dot format. A labeled edge is encoded as
+```
 0->1[label="ob--1"]
-
-0 and 1 are the vertex ids and the in the label "ob--1", "o" means open bracket, 
-an alternative choice is c, meaning close bracket.
-
-"b" means the label of the edge is a bracket, an alternative is "p", meaning parenthesis. 
-
-"--1" means the index of the bracket/parenthesis is 1.
+```
+ - 0 and 1 are the vertex ids;
+ - "ob" means an open bracket. Similarly, we have "cb" for a close bracket, "op" for an open parenthesis, and "cp" for an close parenthesis;
+ - "--1" means the index of the bracket/parenthesis is 1.
 
 ## Usage
 copy your dot file and name it as "current.dot" in the directory
@@ -19,9 +19,10 @@ copy your dot file and name it as "current.dot" in the directory
 run ./graph_reduce.sh
 
 ## Example
+``example/example.dot`` contains the motivation example (Figure 1b) in the PLDI 2020 paper.
 ```
 cp example/example.dot current.dot
 ./graph_reduce.sh
 ```
 
-Then the resulting graph is in current.dot
+The resulting graph is in current.dot
