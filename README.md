@@ -1,5 +1,5 @@
 # Graph Simplification for Interleaved Dyck-Reachability
-This repostory contains an implementation of the paper
+This repository contains an implementation of the paper
 - Yuanbo Li, Qirun Zhang, Thomas Reps. Fast Graph Simplification for Interleaved Dyck-Reachability. In *PLDI 2020*.
 ## Interleaved Dyck language
 The implementation currently supports the interleaved Dyck language of two Dyck languages representing brackets and parentheses, respectively.
@@ -14,7 +14,7 @@ The implementation accepts an input graph in the dot format. A labeled edge is e
  - "--1" means the id of the bracket/parenthesis is 1.
 
 ## Usage
-Copy your dot file and name it as "current.dot" in the directory
+Copy your dot file and name it as ``current.dot`` in the directory
 
 run ./graph_reduce.sh
 
@@ -25,4 +25,4 @@ cp example/example.dot current.dot
 ./graph_reduce.sh
 ```
 
-The resulting graph is in current.dot
+The resulting graph is in ``current.dot``.
