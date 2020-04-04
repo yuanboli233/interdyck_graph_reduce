@@ -8,7 +8,9 @@ The implementation accept a graph input similar to a dot format. An edge should 
 
 0 and 1 are the vertex ids and the in the label "ob--1", "o" means open bracket, 
 an alternative choice is c, meaning close bracket.
+
 "b" means the label of the edge is a bracket, an alternative is "p", meaning parenthesis. 
+
 "--1" means the index of the bracket/parenthesis is 1.
 
 ## Usage
